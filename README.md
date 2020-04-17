@@ -1,3 +1,4 @@
-# SERVER_CLIENT
-# Week 7 (17/4/20)
-Repo lưu mã nguồn bài tập hàng tuần - Đỗ Thành Công - 73248 | Lập trình mạng | Kì 2 | 19.20
+# CLIENT PROJECT
+# By Đỗ Thành Công - 73248 - Lập Trình Mạng(N02)
+Repo Lưu trữ bài tập về nhà (source code) môn Lập Trình Mạng || Học Kì 2 || Năm học (2020-2021)
+
