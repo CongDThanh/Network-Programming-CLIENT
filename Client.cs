@@ -23,7 +23,7 @@ public class Client
             client.Connect("127.0.0.1", PORT_NUMBER);
             Stream stream = client.GetStream();
 
-            Console.WriteLine("đang kết nối.");
+            Console.WriteLine("Connecting...");
             
             while (true)
             {
@@ -33,7 +33,7 @@ public class Client
                 var writer = new StreamWriter(stream);
                 writer.AutoFlush = true;
 
-                Console.WriteLine("nhap tu (0-10) : ");
+                Console.WriteLine("Enter your number (0-10) : ");
 
                 // 2. send
                 string str = Console.ReadLine();
