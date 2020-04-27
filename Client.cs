@@ -54,7 +54,7 @@ public class Client
         catch (Exception ex)
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("#Disconnect At: " + DateTime.Now + "\n" + "#Reason: Closed By Server\n");
+            sb.Append("#Disconnect At: " + DateTime.Now + "-" + "#Reason: Closed By Server\n");
             File.AppendAllText("E:\\KY 6\\LAP TRINH MANG\\Week\\Access.log", sb.ToString());
             sb.Clear();
             Console.WriteLine("Error: " + ex);
