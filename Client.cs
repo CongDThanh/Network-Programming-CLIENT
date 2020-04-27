@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Net;
 using System.Text;
@@ -8,7 +8,7 @@ public class Client
 {
 
     private const int BUFFER_SIZE = 1024;
-    private const int PORT_NUMBER = 9999;
+    private const int PORT_NUMBER = 8888;
 
     static ASCIIEncoding encoding = new ASCIIEncoding();
 
@@ -23,7 +23,7 @@ public class Client
             client.Connect("127.0.0.1", PORT_NUMBER);
             Stream stream = client.GetStream();
 
-            Console.WriteLine("Connecting...");
+            Console.WriteLine("The connection was successful ");
             
             while (true)
             {
@@ -53,6 +53,10 @@ public class Client
 
         catch (Exception ex)
         {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("#Disconnect At: " + DateTime.Now + "\n" + "#Reason: Closed By Server\n");
+            File.AppendAllText("E:\\KY 6\\LAP TRINH MANG\\Week\\Access.log", sb.ToString());
+            sb.Clear();
             Console.WriteLine("Error: " + ex);
         }
 
